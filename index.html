@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Nav</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav_container">
+    <div class="nav_bar">
+      <a href="#" class="logo">Feane</a>
+
+      <nav class="navigation_bar" id="navMenu">
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book Table</a></li>
+          <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+      <ul class="cdn">
+        <li><a href="#">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+             <button>Order Now</button>
+        </a></li>
+    </ul>
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+   <!-- Hero Section -->
+   <section class="hero">
+    <div class="content">
+        <h3>Fast Food Restaurant
+        </h3> 
+        <p>  
+            Doloremque, itaque aperiam facilis rerum, commodi,temporibus sapiente ad <br>it laborum quam quisquam esse error unde. Tempora ex doloremque, labore, <br>sunt  iste magni quos ducimus libero lop unde. Tempora huei tenm tor ipsam.
+
+        </p>
+        
+        <button>Order Now</button>
+      
+        <img class="img-bg" src="https://themewagon.github.io/feane/images/hero-bg.jpg" >
+      </div>
+   </section> 
+   
+   <section class="about" id="about">
+    <div class="container">
+     <div class="left">
+         <img src="https://media.istockphoto.com/id/2165997985/photo/close-up-of-a-massive-tripple-stack-hambuger-and-fries.webp?a=1&b=1&s=612x612&w=0&k=20&c=qozMkq-m5Wwqj3fGM9y6zHXESdQV31YgTgiG6jTgfuc=" alt="">
+         <div class="info">
+             <h2>
+                 Tasty Thursdays</h2>   
+             <span>20% Off</span> 
+             <button>Order Now
+                 <i class="fa fa-shopping-cart"></i>
+             </button>  
+         </div>
+     </div>
+     <div class="right">
+         <img src="https://media.istockphoto.com/id/2165997985/photo/close-up-of-a-massive-tripple-stack-hambuger-and-fries.webp?a=1&b=1&s=612x612&w=0&k=20&c=qozMkq-m5Wwqj3fGM9y6zHXESdQV31YgTgiG6jTgfuc=" alt="">
+         <div class="info">
+         <span>
+             Tasty Thursdays</span>   
+         <span>20% Off</span> 
+         <button>Order Now
+             <i class="fa fa-shopping-cart"></i>
+         </button>  
+     </div>
+     </div>
+   </div>
+</section>
+
+
+   <script>
+    const burger = document.getElementById("burger");
+    const navMenu = document.getElementById("navMenu");
+
+    burger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      burger.classList.toggle("toggle");
+    });
+  </script>
+</body>
+</html>
