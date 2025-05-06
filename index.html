@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav_container">
+    <h1>Hello</h1>
+    <div class="nav_bar">
+      <a href="#" class="logo">Feane</a>
+
+    
+      <nav class="navigation_bar" id="navMenu">
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book Table</a></li>
+        </ul>
+      
+        <ul class="cdn">
+          <li><i class="fa fa-user"></i></li>
+          <li><i class="fa fa-shopping-cart"></i></li>
+          <li><i class="fas fa-search"></i></li>
+          <li><button>Order Now</button></li>
+        </ul>
+      </nav>
+      
+
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+   <!-- Hero Section -->
+   <section class="hero">
+    <div class="content">
+        <h3>Fast Food Restaurant
+        </h3> 
+        <p>  
+            Doloremque, itaque aperiam facilis rerum, commodi,temporibus sapiente ad <br>it laborum quam quisquam esse error unde. Tempora ex doloremque, labore, <br>sunt  iste magni quos ducimus libero lop unde. Tempora huei tenm tor ipsam.
+
+        </p>
+        
+        <button>Order Now</button>
+      
+        <img class="img-bg" src="https://themewagon.github.io/feane/images/hero-bg.jpg" >
+      </div>
+   </section> 
+   
+   <section class="about" id="about">
+    <div class="container">
+     <div class="left">
+         <img src="https://media.istockphoto.com/id/2165997985/photo/close-up-of-a-massive-tripple-stack-hambuger-and-fries.webp?a=1&b=1&s=612x612&w=0&k=20&c=qozMkq-m5Wwqj3fGM9y6zHXESdQV31YgTgiG6jTgfuc=" alt="">
+         <div class="info">
+             <h2>
+                 Tasty Thursdays</h2>   
+             <span>20% Off</span> 
+             <button>Order Now
+                 <i class="fa fa-shopping-cart"></i>
+             </button>  
+         </div>
+     </div>
+     <div class="right">
+         <img src="https://media.istockphoto.com/id/2165997985/photo/close-up-of-a-massive-tripple-stack-hambuger-and-fries.webp?a=1&b=1&s=612x612&w=0&k=20&c=qozMkq-m5Wwqj3fGM9y6zHXESdQV31YgTgiG6jTgfuc=" alt="">
+         <div class="info">
+         <span>
+             Tasty Thursdays</span>   
+         <span>20% Off</span> 
+         <button>Order Now
+             <i class="fa fa-shopping-cart"></i>
+         </button>  
+     </div>
+     </div>
+   </div>
+</section>
+
+
+
+   <!-- Cards Section -->
+
+
+<h2>Our Menu</h2>
+
+<div class="filter-buttons">
+ 
+  <button class="active" onclick="filterMenu('all')">All</button> 
+  <button onclick="filterMenu('burger')">Burger</button>
+  <button onclick="filterMenu('pizza')">Pizza</button>
+  <button onclick="filterMenu('pasta')">Pasta</button>
+  <button onclick="filterMenu('fries')">Fries</button>
+</div>
+
+<div class="menu">
+
+  <!-- 9 Cards with different categories -->
+   
+  <div class="card pizza">
+    <img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpenphfGVufDB8fDB8fHww" alt="">
+    <h3>Delicious Pizza</h3>
+    <p>Cheesy and fresh from the oven.</p>
+    <div class="price-cart">
+      <span class="price">$20</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card burger">
+    <img src="https://images.unsplash.com/photo-1668887465701-41fee9e1d474?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fExvYWRlZCUyMHdpdGglMjBiZWVmJTJDJTIwY2hlZXNlJTIwYW5kJTIwdmVnZ2llc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+    <h3>Juicy Burger</h3>
+    <p>Loaded with beef, cheese and veggies.</p>
+    <div class="price-cart">
+      <span class="price">$15</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card burger">
+    <img src="https://media.istockphoto.com/id/2148672887/photo/beef-patty-burger-with-vegetables-and-lettuce-on-white-background-file-contains-clipping-path.webp?a=1&b=1&s=612x612&w=0&k=20&c=IvStCpZWDpamsaQi6fJLQXoHO9mgdN9crpsZSb7bBgI=" alt="">
+    <h3>Juicy Burger</h3>
+    <p>Loaded with beef, cheese and veggies.</p>
+    <div class="price-cart">
+      <span class="price">$15</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card pizza">
+    <img src="https://images.unsplash.com/photo-1555072956-7758afb20e8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFBpenphfGVufDB8fDB8fHww" alt="">
+    <h3>Pepperoni Pizza</h3>
+    <p>Classic pepperoni with melted cheese.</p>
+    <div class="price-cart">
+      <span class="price">$17</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card fries">
+    <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJpZXN8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>Crispy Fries</h3>
+    <p>Golden fries with a hint of salt.</p>
+    <div class="price-cart">
+      <span class="price">$8</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card burger">
+    <img src="https://plus.unsplash.com/premium_photo-1664392112262-271039647be9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVnZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>Double Burger</h3>
+    <p>Two patties, double the flavor.</p>
+    <div class="price-cart">
+      <span class="price">$18</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card pasta">
+    <img src="https://plus.unsplash.com/premium_photo-1664472619078-9db415ebef44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UGFzdGF8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>Italian Pasta</h3>
+    <p>Rich tomato sauce and parmesan.</p>
+    <div class="price-cart">
+      <span class="price">$16</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card pizza">
+    <img src="https://plus.unsplash.com/premium_photo-1664392112262-271039647be9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFtYnVnZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>Veggie Pizza</h3>
+    <p>Loaded with fresh vegetables.</p>
+    <div class="price-cart">
+      <span class="price">$19</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card fries">
+    <img src="https://images.unsplash.com/photo-1598998834333-c0b91bc9b2a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJpZXN8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>Curly Fries</h3>
+    <p>Spiral cut fries with seasoning.</p>
+    <div class="price-cart">
+      <span class="price">$9</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card fries">
+    <img src="https://images.unsplash.com/photo-1630431341771-1ceb084d6607?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGZyaWVzfGVufDB8fDB8fHww" alt="">
+    <h3>Curly Fries</h3>
+    <p>Spiral cut fries with seasoning.</p>
+    <div class="price-cart">
+      <span class="price">$9</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card pasta">
+    <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UGFzdGF8ZW58MHx8MHx8fDA%3D" alt="">
+    <h3>White Sauce Pasta</h3>
+    <p>Creamy and comforting pasta dish.</p>
+    <div class="price-cart">
+      <span class="price">$17</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+
+  <div class="card pasta">
+    <img src="https://images.unsplash.com/photo-1522666257812-173fdc2d11fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBhc3RhfGVufDB8fDB8fHww" alt="">
+    <h3>White Sauce Pasta</h3>
+    <p>Creamy and comforting pasta dish.</p>
+    <div class="price-cart">
+      <span class="price">$17</span>
+      <button class="cart-btn">+</button>
+    </div>
+  </div>
+</div>
+   <!-- About Section -->
+  <section class="about-9">
+<div class="about-section">
+  <img src="https://themewagon.github.io/feane/images/about-img.png" alt="Burger Illustration"  >
+  <div class="about-content">
+    <h2>We Are Feane</h2>
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+    </p>
+    <button>Read More</button>
+  </div>
+</div>
+</section>
+
+            <!-- Booking Menu -->
+   
+<div class="booking-section">
+  <div class="booking-form">
+    <h2>Book A Table</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="number" placeholder="How many persons?" required>
+      <input type="date" required>
+      <button type="submit">BOOK NOW</button>
+    </form>
+  </div>
+  
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63796.055118885255!2d45.3312512!3d2.0545536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sso!4v1746281765115!5m2!1sen!2sso" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+   <!-- Our Customer Say -->
+
+   <section class="testimonials">
+    <h2>What Says Our Customers</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-box">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <h4>Moana Michell</h4>
+        <span>magna aliqua</span>
+      </div>
+      <div class="testimonial-box">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <h4>Mike Hamell</h4>
+        <span>magna aliqua</span>
+      </div>
+    </div>
+
+    <div class="avatars">
+      <img src="https://images.unsplash.com/photo-1568880893176-fb2bdab44e41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwaGFwcHklMjBwcm9maWxlfGVufDB8fDB8fHww" alt="Moana" class="avatar" />
+      <img src="https://images.unsplash.com/photo-1562885780-2b6f6f160b3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWVuJTIwaGFwcHklMjBwcm9maWxlfGVufDB8fDB8fHww" alt="Mike" class="avatar active" />
+    </div>
+
+    <div class="nav-dots">
+      <span></span>
+      <span class="active"></span>
+      <span></span>
+    </div>
+  </section>
+
+      <!-- Footer Section -->
+
+      <footer style="background-color: #222; color: #fff; padding: 40px 0; text-align: center;">
+        <div class="footer-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+          
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Location</p>
+            <p>Call: +252770962015</p>
+            <p>Email: demo@gmail.com</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Feane</h3>
+            <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f" style="color:white;"></i></a>
+              <a href="#"><i class="fab fa-twitter" style="color:white;"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in" style="color:white;"></i></a>
+              <a href="#"><i class="fab fa-instagram" style="color:white;"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Everyday</p>
+            <p>10.00 Am -10.00 Pm</p>
+          </div>
+        </div>
+      
+        <p style="margin-top: 20px; font-size: 14px;">© 2025 All Rights Reserved By Free Html Templates</p>
+        <p style="font-size: 14px;">Distributed By EngAI</p>
+      </footer>
+   <script>
+    const burger = document.getElementById("burger");
+    const navMenu = document.getElementById("navMenu");
+
+    burger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      burger.classList.toggle("toggle");
+    });
+
+
+    function filterMenu(category) {
+    const cards = document.querySelectorAll('.card');
+    const buttons = document.querySelectorAll('.filter-buttons button');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    cards.forEach(card => {
+      if (category === 'all' || card.classList.contains(category)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Show all cards on initial load
+  window.onload = () => filterMenu('all');
+  </script>
+</body>
+</html>
